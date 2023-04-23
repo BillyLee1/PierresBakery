@@ -19,25 +19,51 @@ namespace PierresBakery
       int PastryCt = int.Parse(PastryString);
       Bread breadClass = new Bread(BreadCt);
       Pastry pastryClass = new Pastry(PastryCt);
-      Console.WriteLine("-------------------------");
+      Console.WriteLine("############################################################################");
+      Console.WriteLine("----------------------------------------------------------------------------");
       Console.WriteLine($"You bought {BreadString} loafs of bread and");
       CheckBreadCost(breadClass);
-      Console.WriteLine("-------------------------");
+      Console.WriteLine("                                  ████████████████                      ");
+      Console.WriteLine("                              ██████░░░░░░████░░░░██  ████                 ");
+      Console.WriteLine("                          ████░░░░████░░░░░░██░░░░░░██░░░░██              ");
+      Console.WriteLine("                        ██░░░░░░░░░░██░░░░░░██░░░░░░░░██░░░░██  ");
+      Console.WriteLine("                        ██░░░░░░░░░░██░░░░░░░░░░░░░░░░██░░░░░░██  ");
+      Console.WriteLine("                      ██▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▓▓██ ");
+      Console.WriteLine("                      ██▓▓▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▓▓▓▓██");
+      Console.WriteLine("                      ██▓▓▓▓▓▓▓▓░░░░░░░░░░░░░░░░░░░░▓▓▓▓▓▓▓▓██  ");
+      Console.WriteLine("                        ████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██████");
+      Console.WriteLine("                            ██████████████████████████  ");
+      Console.WriteLine("----------------------------------------------------------------------------");
       Console.WriteLine($"You bought {PastryString} pastries and");
       CheckPastryCost(pastryClass);
-      Console.WriteLine("-------------------------");
+      Console.WriteLine("----------------------------------------------------------------------------");
+Console.WriteLine("                    ▒▒▒▒▒▒▒▒                    ");
+Console.WriteLine("                  ▒▒▒▒▒▒░░▒▒▒▒  ");
+Console.WriteLine("                  ▒▒░░░░▒▒▒▒▒▒ ");
+Console.WriteLine("              ░░░░▒▒▒▒▒▒▒▒▒▒▒▒░░░░  ");
+Console.WriteLine("            ░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░  ");
+Console.WriteLine("            ▒▒░░░░▒▒▒▒▒▒▒▒▒▒▒▒░░▒▒▒▒▒▒ ");
+Console.WriteLine("        ▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒   ");
+Console.WriteLine("      ▓▓░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░▒▒░░░░▒▒ ");
+Console.WriteLine("    ▒▒▒▒░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░▒▒░░ ");
+Console.WriteLine("    ▒▒▒▒▒▒░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░▒▒▒▒▒▒");
+Console.WriteLine("    ▒▒▒▒▒▒▒▒▒▒▒▒░░▒▒▒▒░░▒▒▒▒▒▒▒▒▒▒▒▒░░▒▒▒▒▒▒▒▒");
+Console.WriteLine("    ▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ ");
+Console.WriteLine("      ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒  ");
+Console.WriteLine("          ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ ");
+      Console.WriteLine("###########################################################################");
     }
 
     static void CheckBreadCost(Bread breadClass)
     {
       string result = breadClass.CheckCost();
-      Console.WriteLine($"it cost you ${result}.");
+      Console.WriteLine($"it costed you ${result}.");
     }
 
     static void CheckPastryCost(Pastry pastryClass)
     {
       string result = pastryClass.CheckCost();
-      Console.WriteLine($"it cost you ${result}.");
+      Console.WriteLine($"it costed you ${result}.");
     }
   }
 }
