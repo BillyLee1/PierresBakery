@@ -11,6 +11,8 @@ namespace PierresBakery
       Console.WriteLine("We also sell pasteries for 2 dollars each and we have a buy three get one deal.");
       Console.WriteLine("How many breads would you like to purchase?");
       Console.WriteLine("How many pasteries would you like to purchase?");
+      int x = 7/3;
+      Console.WriteLine(x);
     }
   }
 }
