@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 
-namespace Breads.Models
+namespace Pastrys.Models
 {
-  public class Bread
+  public class Pastry
   {
     private int _quantity;
     public int Quantity
@@ -11,21 +11,21 @@ namespace Breads.Models
       set { _quantity = value; }
     }
 
-    public Bread(int amount)
+    public Pastry(int amount)
     {
       _quantity = amount;
     }
 
     public string CheckCost()
     {
-      int price = (_quantity / 3) * 10;
-      if (_quantity % 3 == 0) 
+      int price = (_quantity / 4) * 6;
+      if (_quantity % 4 == 0) 
       {
         return price.ToString();
       } 
       else 
       {
-        return (price + ((_quantity % 3) * 5)).ToString();
+        return (price + ((_quantity % 4) * 2)).ToString();
       }
     }
   }
